@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 
 # Database
 from app.database import engine, Base
-from app.models import IndexingState
+from app.models import IndexingState, SchedulerLog
 
 load_dotenv()
 
@@ -97,7 +97,9 @@ def health():
         "face_engine": app_state.face_engine is not None,
         "b2_storage": app_state.b2_storage is not None,
         "matcher": app_state.matcher is not None,
-        "sync_in_progress": app_state.sync_in_progress
+        "sync_in_progress": app_state.sync_in_progress,
+        "scheduler_running": app_state.scheduler_running,
+        "scheduler_status": app_state.scheduler_info["status"]
     }
 
 
