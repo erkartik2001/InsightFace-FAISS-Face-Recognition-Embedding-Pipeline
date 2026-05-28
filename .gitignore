@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+myenv/
+venv/
+env/
+faiss_index/
+temp/
+uploads/
+*.pkl
+*.index
+.DS_Store

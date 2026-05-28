@@ -1,0 +1,21 @@
+# Core ML / Face Recognition
+insightface
+onnxruntime
+faiss-cpu
+numpy<2
+pillow
+tqdm
+opencv-python-headless==4.9.0.80
+
+# Web Framework
+fastapi
+uvicorn
+python-multipart
+
+# Storage
+b2sdk
+python-dotenv
+
+# Database
+sqlalchemy
+psycopg2-binary
